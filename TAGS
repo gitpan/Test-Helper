@@ -1,8 +1,8 @@
 
 lib/Test/Helper.pm,174
-sub test(&) {test13,321
-sub ok($;) {ok22,500
-sub comm(@) {comm29,615
-sub runs(&) {runs34,690
-sub heinous(&) {heinous40,760
-sub syntax_check() {syntax_check46,900
+sub test(&) {test11,204
+sub ok($;) {ok20,383
+sub comm(@) {comm27,498
+sub runs(&) {runs32,573
+sub heinous(&) {heinous38,643
+sub syntax_check() {syntax_check44,783

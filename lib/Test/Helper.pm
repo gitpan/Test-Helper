@@ -1,14 +1,12 @@
 # $Id: Helper.pm 1.7 Fri, 05 Sep 1997 16:08:15 -0400 jesse $
 
 package Test::Helper;
-use Carp;
-use IO::File;
-use vars qw($VERSION @ISA @EXPORT $count $output);
-use Exporter;
-@ISA=qw(Exporter);
-@EXPORT=qw(ok comm test runs heinous syntax_check);
-# $Format: "$VERSION='$TestHelperRelease$';"$
-$VERSION='0.002';
+use mods q{
+  Carp;
+  IO::File;
+  $count, $output;
+  <ok!, comm!, test!, runs!, heinous!, syntax_check!>;
+};
 
 sub test(&) {
   local($count)=0;
@@ -112,7 +110,7 @@ Jesse Glick, B<jglick@sig.bsh.com>
 
 =head1 REVISION
 
-X<$Format: "F<$Source$> last modified $Date$. Release $TestHelperRelease$. $Copyright$"$>
-F<Test-Helper/lib/Test/Helper.pm> last modified Fri, 05 Sep 1997 16:08:15 -0400. Release 0.002. Copyright (c) 1997 Strategic Interactive Group. All rights reserved. This program is free software; you can redistribute it and/or modify it under the same terms as Perl itself.
+X<$Format: "F<$Source$> last modified $Date$. Part of B<$Project$> release $ProjectRelease$. $Copyright$"$>
+F<Test-Helper/lib/Test/Helper.pm> last modified Fri, 05 Sep 1997 16:08:15 -0400. Part of B<perlutils> release 1.005. Copyright (c) 1997 Strategic Interactive Group. All rights reserved. This program is free software; you can redistribute it and/or modify it under the same terms as Perl itself.
 
 =cut
